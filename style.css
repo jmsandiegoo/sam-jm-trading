@@ -1,0 +1,97 @@
+/* 
+=== TABLE OF CONTENT === 
+
+
+*/
+
+/* === GENERAL === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    background: #fff;
+    color: #29282D;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-light, .btn-dark {
+    font-size: 11px;
+    text-transform: uppercase;
+    border: #E65656 solid 1px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 8px 50px;
+}
+
+.btn-light {
+    color: #E65656;
+    background: #fff;
+}
+
+.btn-dark {
+    color: #fff;
+    background: #E65656;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* === NAVBAR === */
+
+nav {
+    margin: 60px 0;
+}
+.logo {
+    width: 150px; 
+}
+
+/* === LANDING SECTION === */
+
+.landing-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landing-message h1 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.landing-message .btn-dark {
+    margin-left: 30px;
+}
+
+.landing-section .landing-message {
+    flex: 2 0 150px;
+}
+
+.landing-section .landing-message h1 {
+    flex: 1 0 100%;
+}
+
+.landing-section .landing-image {
+    flex: 1 0 150px;
+}
+
+.landing-section .landing-image img {
+    width: 100%;
+}
