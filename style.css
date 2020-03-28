@@ -23,6 +23,11 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -53,22 +58,34 @@ a {
     margin: 0 auto;
 }
 
-/* === NAVBAR === */
-
-nav {
-    margin: 60px 0;
-}
-.logo {
-    width: 150px; 
-}
-
 /* === LANDING SECTION === */
 
 .landing-section {
+    height: 100vh;
+    padding: 100px 0 0 0;
+}
+
+nav {
+    margin: 0 0 50px 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.landing-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+}
+
+.landing-content .landing-message {
+    flex: 2 0 150px;
+}
+
+.landing-content .landing-message h1 {
+    flex: 1 0 100%;
 }
 
 .landing-message h1 {
@@ -80,18 +97,79 @@ nav {
     margin-left: 30px;
 }
 
-.landing-section .landing-message {
-    flex: 2 0 150px;
-}
-
-.landing-section .landing-message h1 {
-    flex: 1 0 100%;
-}
-
-.landing-section .landing-image {
+.landing-image {
     flex: 1 0 150px;
 }
 
-.landing-section .landing-image img {
+.landing-image img {
     width: 100%;
+}
+
+.landing-section .divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.mouse {
+    width: 100px;
+    margin: 50px auto;
+} 
+
+.mouse-icon {
+    width: 25px;
+    height: 45px;
+    border: 1px solid #29282D;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.mouse-wheel {
+    height: 6px;
+    width: 3px;
+    background: #29282D;
+    border-radius: 40%;
+    display: block;
+    margin: 0 auto;
+    animation: mouse-wheel-animate 1.6s ease infinite;
+}
+
+@keyframes mouse-wheel-animate {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+.divider svg {
+    display: block;
+}
+
+/* === PRODUCTS SECTION === */
+
+.products-section {
+    padding: 50px 0;
+    background: #E65656;
+}
+
+.products-section .title {
+    text-align: center;
+}
+
+.products-section .dash {
+    width: 30px;
+    border-top: 5px solid #fff;
+    margin: 5px auto;
+}
+
+.products-section h2 {
+    color: #fff;
 }
