@@ -1,3 +1,4 @@
+/* https://vecta.io/blog/best-way-to-embed-svg ref link for dealing with svg */
 /* 
 === TABLE OF CONTENT === 
 
@@ -58,11 +59,18 @@ a {
     margin: 0 auto;
 }
 
+.divider svg {
+    display: block;
+    height: 96px;
+    width: 100%;
+}
+
 /* === LANDING SECTION === */
 
 .landing-section {
     height: 100vh;
     padding: 100px 0 0 0;
+    position: relative;
 }
 
 nav {
@@ -149,18 +157,18 @@ nav {
     }
 }
 
-.divider svg {
-    display: block;
-}
-
 /* === PRODUCTS SECTION === */
 
 .products-section {
-    padding: 50px 0;
     background: #E65656;
+    position: relative;
 }
 
-.products-section .title {
+.products-section .container {
+    padding: 50px 0;
+}
+
+.products-section header {
     text-align: center;
 }
 
@@ -172,4 +180,33 @@ nav {
 
 .products-section h2 {
     color: #fff;
+}
+
+.products-grid {
+    margin: 60px 0; 
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product h3 {
+    color: #fff;
+    font-weight: 200;
+    margin: 20px 0 0 0;
+    letter-spacing: 2px;
+}
+
+.products-section .divider {
+    position: absolute; 
+    transform: rotate(180deg);
 }
