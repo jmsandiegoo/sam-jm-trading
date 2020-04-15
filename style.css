@@ -347,6 +347,14 @@ footer {
         font-size: 25px;
     }
 
+    nav {
+        text-align: center;
+    }
+
+    .landing-message {
+        text-align: center;
+    }
+
     .btn-light, .btn-dark {
         display: block;
         width: 70%;
