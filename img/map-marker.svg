@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="512" viewBox="0 0 384 512">
+  <g id="Group_7" data-name="Group 7" transform="translate(1243 -717)">
+    <path id="map-marker-alt-solid_1_" data-name="map-marker-alt-solid (1)" d="M172.268,501.67C26.97,291.031,0,269.413,0,192,0,85.961,85.961,0,192,0S384,85.961,384,192c0,77.413-26.97,99.031-172.268,309.67a24.011,24.011,0,0,1-39.464,0ZM192,272a80,80,0,1,0-80-80A80,80,0,0,0,192,272Z" transform="translate(-1243 717)" fill="#e65656"/>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="81" cy="80.5" rx="81" ry="80.5" transform="translate(-1132 829)" fill="#fff"/>
+  </g>
+</svg>

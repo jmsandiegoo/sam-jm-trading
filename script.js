@@ -1,6 +1,6 @@
 // Btn Functionality
 
-function scrollTo(position) {
+function scrollToSpecificElem(position) {
     $("html, body").animate({
         scrollTop: position
     }, 900);
@@ -11,22 +11,19 @@ function getTopPosition(elem) {
     return elem.getBoundingClientRect().top + scrollTop;
 }
 
-window.addEventListener('scroll', () => {
-})
-
-
 var contactBtn = document.querySelector("#contact-btn");
 
 contactBtn.addEventListener('click', function () {
     var contactSection = document.querySelector(".business-info-section")
-    scrollTo(getTopPosition(contactSection));
+    scrollToSpecificElem(getTopPosition(contactSection));
 });
 
 var locateBtn = document.querySelector("#locate-btn");
 
 locateBtn.addEventListener('click', function () {
+    console.log('clicked');
     var locateSection = document.querySelector(".business-info-section .locate")
-    scrollTo(getTopPosition(locateSection) - 20);
+    scrollToSpecificElem(getTopPosition(locateSection) - 20);
 })
 
 
@@ -81,7 +78,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Adding Marker
 
 var customMarker = L.icon({
-    iconUrl: 'img/marker.svg',
+    iconUrl: 'img/map-marker.svg',
     iconSize: [55,55],
     iconAnchor: [25,50],
     popupAnchor: [0, -45]
