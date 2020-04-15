@@ -245,6 +245,7 @@ nav {
 .products-section .divider {
     position: absolute; 
     transform: rotate(180deg);
+    width: 100%;
 }
 
 /* === BUSINESS INFORMATION SECTION === */
