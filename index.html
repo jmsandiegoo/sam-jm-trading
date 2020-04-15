@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam & Jm Trading</title>
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,8 +21,8 @@
                 <div class="landing-content">
                     <div class="landing-message">
                         <h1>Providing You Affordable Hardware Tools</h1>
-                        <a href="#" class="btn-light">Contact Now</a>
-                        <a href="#" class="btn-dark">Locate Us</a>
+                        <a id="contact-btn" href="#contact" class="btn-light">Contact Now</a>
+                        <a id="locate-btn" href="#locate" class="btn-dark">Locate Us</a>
                     </div>
                     <div class="landing-image">
                         <img src="img/landing.jpg" alt="faucet">
@@ -93,7 +95,40 @@
                 </svg>
             </div>
         </section>
+        <section class="business-info-section">
+            <div class="container">
+                <header>
+                    <div class="dash"></div>
+                    <h2>Order Now</h2>
+                </header>
+                <div class="operating-hours">
+                    <p>Business Operating Hours</p>
+                    <ul>
+                        <li><span>Mon - Sat</span><span>8am - 6pm</span></li>
+                        <li><span>Sunday</span><span>8am - 12pm</span></li>
+                        <li><span>Public Holidays</span><span>Closed</span></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <p>Contact us now through our business landline.</p>
+                    <a href="" class="landline"><i class="fas fa-phone"></i> +63 941-02-72</a>
+                </div>
+                <div class="locate">
+                    <p>Or Locate us at.</p>
+                    <address>M.H. Del Pilar St. San Rafael,<br/>Rodriguez (Montalban), Rizal</address>
+                    <a href="http://maps.google.com/maps?daddr=150+MH+del+Pilar+St,+Rodriguez,+1860+Rizal,+Philippines" target="_blank"><u>Get Directions</u></a>
+                    <div id="map"><!-- Google Map Here --></div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">   
+            <small>Copyright &copy; 2020 Sam & Jm Trading Philippines, All rights reserved.</small>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
 

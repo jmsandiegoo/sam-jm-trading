@@ -16,8 +16,10 @@ body {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     background: #fff;
     color: #29282D;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 200;
 }
 
 h1 {
@@ -33,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .btn-light, .btn-dark {
     font-size: 11px;
     text-transform: uppercase;
@@ -40,6 +46,7 @@ a {
     border-radius: 3px;
     display: inline-block;
     padding: 8px 50px;
+    font-weight: 400;
 }
 
 .btn-light {
@@ -52,11 +59,20 @@ a {
     background: #E65656;
 }
 
+.btn-light:hover, .btn-light:active, .btn-dark:hover, .btn-dark:active {
+    opacity: 0.9;
+}
 
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.dash {
+    width: 30px;
+    margin: 5px auto;
+    border-top: 5px solid #29282D;
 }
 
 .divider svg {
@@ -173,9 +189,7 @@ nav {
 }
 
 .products-section .dash {
-    width: 30px;
-    border-top: 5px solid #fff;
-    margin: 5px auto;
+    border-color: #fff;
 }
 
 .products-section h2 {
@@ -210,3 +224,64 @@ nav {
     position: absolute; 
     transform: rotate(180deg);
 }
+
+/* === BUSINESS INFORMATION SECTION === */
+
+.business-info-section .container {
+    padding: 170px 0 100px 0;
+    text-align: center;
+}
+
+.fas.fa-phone {
+    transform: rotateY(180deg);
+    -webkit-text-stroke: 2px #fff;
+    font-size: 30px;
+}
+
+.business-info-section p, address {
+    margin: 20px 0;
+}
+
+.business-info-section address {
+    font-style: normal;
+}
+
+.operating-hours ul {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.operating-hours ul li {
+    display: flex;
+    justify-content: space-between;
+    color: #E65656;
+}
+
+.contact .landline {
+    color: #E65656;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.locate a {
+    color: #E65656
+}
+
+#map {
+    margin: 20px 0;
+    background: grey;
+    height: 500px;
+}
+
+
+/* === FOOTER === */
+
+footer {
+    height: 100px;
+    background: #29282D;
+    padding: 35px 0;
+    color: #fff;
+    font-size: 15px;
+}
+
